@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Smart Sales Dashboard</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Smart Sales Dashboard</h1>
+    </nav>
+
+
+    
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- KPI Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">0 EGP</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Products Sold</h3>
+                <p id="totalProducts">0</p>
+            </div>
+
+        </section>
+
+        <!-- Add Order -->
+        <section class="form-section">
+
+            <h2>Add New Order</h2>
+
+            <div class="form-grid">
+
+                <input type="text" id="productName" placeholder="Product Name">
+
+                <input type="text" id="category" placeholder="Category">
+
+                <input type="number" id="price" placeholder="Price">
+
+                <input type="number" id="quantity" placeholder="Quantity">
+
+                <input type="date" id="date">
+
+                <button id="addOrderBtn">Add Order</button>
+
+            </div>
+
+        </section>
+
+        <!-- Orders Table -->
+        <section class="table-section">
+
+            <h2>Orders</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ordersTableBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
